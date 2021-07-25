@@ -1,0 +1,21 @@
+.page-title {
+  font-size: 3.25em;
+}
+
+#container {
+  margin: 50px;
+}
+
+.card {
+  margin: 0 10em;
+  width: 300px;
+}
+
+button {
+  color: #fff!important;
+  min-width: 90px;
+}
+
+.center {
+  text-align: center;
+}

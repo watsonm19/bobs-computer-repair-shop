@@ -1,0 +1,67 @@
+<!-- close button -->
+<div style="text-align: right">
+  <button mat-icon-button matDialogClose="cancel">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<br />
+
+<!-- invoice summary  -->
+<p><strong>Invoice Summary</strong> <span style="float: right">Date: {{ today | date }}</span></p>
+<br />
+
+<!-- services invoice -->
+<div>
+  <br />
+  <div *ngFor="let service of services">
+    <div>
+      {{ service.name }}:
+      <span>{{ service.price | currency }}</span>
+    </div>
+  </div>
+
+  <br />
+
+  <!-- parts invoice -->
+  <div>
+    <div *ngIf="parts">
+      <div>
+        Parts:
+        <span>{{ parts | currency }}</span>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- labor invoice -->
+    <div *ngIf="hourlyRate">
+      <div>
+        Labor:
+        <span>{{ hourlyRate | currency }}</span>
+      </div>
+    </div>
+    <ng-template #value>
+      Labor:
+      <span>{{ hourlyRate | currency }}</span>
+    </ng-template>
+  </div>
+  <br />
+
+  <hr />
+  <!-- total invoice -->
+  <div *ngIf="total">
+    <div>
+      Total Charges:
+      <span>{{ total | currency }}</span>
+    </div>
+  </div>
+</div>
+<br />
+
+<!-- print -->
+<div style="text-align: right">
+  <button color="primary" mat-button onClick="window.print()" style="border: 1px solid #1c9954;">
+    Submit Order
+  </button>
+</div>

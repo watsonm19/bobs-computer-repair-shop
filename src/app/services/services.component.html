@@ -1,0 +1,63 @@
+<br />
+
+<!-- page title -->
+<h2 class="page-title center">
+  All Available Services
+</h2>
+
+<br />
+
+<div id="container">
+  <div fxLayout="row wrap" fxLayoutAlign="center">
+    <mat-card class="card">
+      <!-- services -->
+      <h2>Services</h2>
+
+      <div *ngFor="let service of services">
+        <mat-checkbox [(ngModel)]="service.checked">
+          {{ service.name }} ({{ service.price | currency }})
+        </mat-checkbox>
+      </div>
+
+      <br />
+
+      <h2>Services Total:</h2>
+      {{ calculateServices() | currency }}
+    </mat-card>
+    <mat-card class="card">
+      <!-- standard fees -->
+      <h2>Standard Fees</h2>
+      <br />
+      <div>
+        <mat-form-field fxFlex appearance="fill">
+          <mat-label>Parts</mat-label>
+          <mat-icon matPrefix>attach_money</mat-icon>
+          <input id="parts" type="text" name="parts" matInput type="number" [(ngModel)]="parts" />
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field fxFlex appearance="fill">
+          <mat-label>Hours of Labor X $50.00</mat-label>
+          <mat-icon matPrefix>access_time</mat-icon>
+          <input id="hours" type="text" name="hours" matInput type="number" [(ngModel)]="hours" />
+        </mat-form-field>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+<hr style="width: 45%"/>
+<br />
+
+<!-- buttons -->
+<div class="center">
+  <button id="clearButton" color="warn" mat-raised-button (click)="clearServices()" (click)="clearFees()">
+    Clear
+  </button>
+
+  <br /><br />
+
+  <button id="calculateButton" color="primary" mat-raised-button (click)="calculateServices()" (click)="calculateFees()">
+    Calculate
+  </button>
+</div>
