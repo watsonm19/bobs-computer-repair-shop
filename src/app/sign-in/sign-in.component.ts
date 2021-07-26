@@ -40,7 +40,7 @@ export class SignInComponent implements OnInit {
       // go to services page if valid
       this.cookieService.set('session_user', customerUsername.toString(), 1);
       this.router.navigate(['/services']);
-      window.open('bobs-computer-repair-shop/services', '_self');
+      window.open('https://watsonm19.github.io/bobs-computer-repair-shop/services', '_self');
     } else {
       // error message if invalid
       this.errorMessage = `The username you entered is invalid, please try again.`;
