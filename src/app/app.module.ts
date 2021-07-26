@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: App modules.
+;==============================================
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,13 +29,19 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { BaseLayoutComponent } from './base-layout/base-layout.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ServicesComponent,
-    InvoiceSummaryComponent
+    InvoiceSummaryComponent,
+    SignInComponent,
+    BaseLayoutComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

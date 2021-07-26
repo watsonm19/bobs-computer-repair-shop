@@ -3,18 +3,19 @@
 ; Title:  Bob's Computer Repair Shop
 ; Author: Mark Watson
 ; Date: 25 July 2021
-; Description: Home components.
+; Description: Not found components.
 ;==============================================
 */
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
+  styleUrls: ['./not-found.component.css']
 })
-export class HomeComponent implements OnInit {
+
+export class NotFoundComponent implements OnInit {
 
   constructor() { }
 

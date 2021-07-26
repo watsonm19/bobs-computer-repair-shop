@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: App components.
+;==============================================
+*/
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +14,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  shopName = `Bob's Computer Repair Shop`;
+
 }

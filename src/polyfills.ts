@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Polyfills file.
+;==============================================
+*/
+
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.

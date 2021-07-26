@@ -1,0 +1,29 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Sign-in component CSS file.
+;==============================================
+*/
+
+.signin-container {
+  width: 35%;
+  margin: 10% auto;
+}
+
+.signin-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+}
+
+.msg-error {
+  margin: 10px 0px;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+#hint {
+  color: lightslategray;
+  font-size: 10px;
+}

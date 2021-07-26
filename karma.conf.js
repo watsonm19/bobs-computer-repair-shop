@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Karma config.
+;==============================================
+*/
+
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 

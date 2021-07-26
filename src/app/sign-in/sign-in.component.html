@@ -1,0 +1,37 @@
+<!-- sign-in form -->
+<div fxLayout="column">
+  <mat-card fxFlex class="mat-elevation-z8 signin-container">
+    <!-- title & subtitle -->
+    <mat-card-title>Customer Sign In</mat-card-title>
+    <mat-card-subtitle>You must enter a registered username to proceed.</mat-card-subtitle>
+
+    <mat-card-content>
+      <!-- error message on error -->
+      <div class="msg-error" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </div>
+
+      <!-- form -->
+      <mat-card class="mat-elevation-z0" fxLayout="column" fxLayoutGap="10px">
+        <form [formGroup]="signinForm" (ngSubmit)="onSubmit(); signinForm.reset()">
+          <mat-card-content>
+
+            <mat-form-field fxFlex appearance="fill">
+              <!-- username input -->
+              <mat-label for="txtCustomerUsername" id="lblCustomerUsername">Username</mat-label>
+              <input type="text" matInput formControlName="customerUsername" id="txtCustomerUsername" name="txtCustomerUsername" />
+            </mat-form-field>
+          </mat-card-content>
+
+          <!-- submit button -->
+          <mat-card-actions>
+            <button type="submit" fxFlex mat-raised-button color="primary">Submit</button>
+          </mat-card-actions>
+        </form>
+
+        <p id="hint">Hint: type "guest", "user", "customer", or "visitor" to sign in.</p>
+      </mat-card>
+
+    </mat-card-content>
+  </mat-card>
+</div>

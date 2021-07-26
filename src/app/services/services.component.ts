@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Services components.
+;==============================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { IService } from '../services.interface';
 import { ServicesService } from '../services.service';

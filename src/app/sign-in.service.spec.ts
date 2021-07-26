@@ -3,20 +3,20 @@
 ; Title:  Bob's Computer Repair Shop
 ; Author: Mark Watson
 ; Date: 25 July 2021
-; Description: Services service specs.
+; Description: Sign-in service specs.
 ;==============================================
 */
 
 import { TestBed } from '@angular/core/testing';
 
-import { ServicesService } from './services.service';
+import { SignInService } from './sign-in.service';
 
-describe('ServicesService', () => {
-  let service: ServicesService;
+describe('SignInService', () => {
+  let service: SignInService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ServicesService);
+    service = TestBed.inject(SignInService);
   });
 
   it('should be created', () => {

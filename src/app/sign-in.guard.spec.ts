@@ -3,23 +3,23 @@
 ; Title:  Bob's Computer Repair Shop
 ; Author: Mark Watson
 ; Date: 25 July 2021
-; Description: Services service specs.
+; Description: Sign-in guard specs.
 ;==============================================
 */
 
 import { TestBed } from '@angular/core/testing';
 
-import { ServicesService } from './services.service';
+import { SignInGuard } from './sign-in.guard';
 
-describe('ServicesService', () => {
-  let service: ServicesService;
+describe('SignInGuard', () => {
+  let guard: SignInGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ServicesService);
+    guard = TestBed.inject(SignInGuard);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(guard).toBeTruthy();
   });
 });

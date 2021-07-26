@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Home component CSS file.
+;==============================================
+*/
+
 .home-message {
   font-size: 3.25em;
   line-height: 1.5em;
@@ -10,7 +19,7 @@
 
 .small-text {
   font-size: 0.60em;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -27,6 +36,7 @@ ul {
 mat-card {
   width: 60%;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
 .center {

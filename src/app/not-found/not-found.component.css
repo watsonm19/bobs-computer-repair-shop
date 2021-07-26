@@ -1,0 +1,32 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Not found component CSS file.
+;==============================================
+*/
+
+#error {
+  font-size: 5em;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.img-attribution {
+  font-size: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}

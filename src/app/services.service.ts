@@ -1,9 +1,19 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Services service file.
+;==============================================
+*/
+
 import { Injectable } from '@angular/core';
 import { IService } from './services.interface';
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class ServicesService {
   services: Array<IService>; // services array
 

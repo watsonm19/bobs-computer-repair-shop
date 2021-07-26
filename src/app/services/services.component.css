@@ -1,3 +1,12 @@
+/*
+===============================================
+; Title:  Bob's Computer Repair Shop
+; Author: Mark Watson
+; Date: 25 July 2021
+; Description: Services component CSS file.
+;==============================================
+*/
+
 .page-title {
   font-size: 3.25em;
 }
@@ -7,7 +16,7 @@
 }
 
 .card {
-  margin: 0 10em;
+  margin: 0 7em;
   width: 300px;
 }
 

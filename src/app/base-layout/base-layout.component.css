@@ -3,10 +3,20 @@
 ; Title:  Bob's Computer Repair Shop
 ; Author: Mark Watson
 ; Date: 25 July 2021
-; Description: Production environment file.
+; Description: App component CSS file.
 ;==============================================
 */
 
-export const environment = {
-  production: true
-};
+.shop-name {
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1c9954;
+}

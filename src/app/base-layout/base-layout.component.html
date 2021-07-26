@@ -1,0 +1,29 @@
+<!-- Nav -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div>
+      <a href="/">
+        <!-- logo -->
+        <div fxLayout="row" class="logo">
+          <img src="./assets/bcrs-logo.png" alt="Bob's Computer Repair Shop Logo" height="50" />
+          <h1 class="shop-name">
+            {{ shopName }}
+          </h1>
+        </div>
+      </a>
+    </div>
+
+    <!-- nav link items -->
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/services">Services</button>
+        <button *ngIf="!isLoggedIn" mat-button routerLink="/sign-in">Sign In</button>
+        <button *ngIf="isLoggedIn" mat-button (click)="signOut()">Sign Out</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<router-outlet></router-outlet>
