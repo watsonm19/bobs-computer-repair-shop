@@ -69,7 +69,7 @@ export class ServicesComponent implements OnInit {
     }
 
     if (!!parts) {
-      total = +parts + total;
+      total = parts + total;
     }
 
     this.services.forEach((service) => {
